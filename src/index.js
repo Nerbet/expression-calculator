@@ -82,7 +82,7 @@ for(var i=0; i<arr.length; i++)
         }
         if(arr[i+1] == 0)
         {
-            return 0;
+            return "Can't divide 0";
         }
         sum = arr[i-1] / arr[i+1];
         arr[i-1] = sum;
