@@ -48,6 +48,8 @@ for(var i = 0; i<expr.length; i++)
     }
 }
 console.log(arr.length);
+while(arr.length != 0)
+{
 for(var k=0; k<arr.length; k++)
 {
 for(var i=0; i<arr.length; i++)
@@ -80,7 +82,8 @@ for(var i=0; i<arr.length; i++)
         }
         if(arr[i+1] == 0)
         {
-            continue;
+            return 0;
+            ;
         }
         sum = arr[i-1] / arr[i+1];
         arr[i-1] = sum;
@@ -88,6 +91,8 @@ for(var i=0; i<arr.length; i++)
         i--;
     }
 }
+for(var k=0; k<arr.length; k++)
+{
 for(var i=0;i<arr.length;i++)
 {
     if(arr[i] == "+")
@@ -111,6 +116,8 @@ if(arr[i] == "-")
     arr[i-1] = sum;
     arr.splice(i, 2);
     i--;
+}
+}
 }
 }
 }
