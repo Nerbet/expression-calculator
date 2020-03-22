@@ -110,6 +110,7 @@ if(arr[i] == "-")
 }
 }
 }
+    return arr[0];
 }
 
 module.exports = {
