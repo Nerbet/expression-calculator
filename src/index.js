@@ -80,10 +80,6 @@ for(var i=0; i<arr.length; i++)
         {
             continue;
         }
-        if(arr[i+1] == 0)
-        {
-            return "Can't divide 0";
-        }
         sum = arr[i-1] / arr[i+1];
         arr[i-1] = sum;
         arr.splice(i, 2);
