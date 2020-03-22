@@ -78,6 +78,10 @@ for(var i=0; i<arr.length; i++)
         {
             continue;
         }
+        if(arr[i+1] == 0)
+        {
+            continue;
+        }
         sum = arr[i-1] / arr[i+1];
         arr[i-1] = sum;
         arr.splice(i, 2);
@@ -110,7 +114,7 @@ if(arr[i] == "-")
 }
 }
 }
-    return arr[0];
+return arr[0];
 }
 
 module.exports = {
